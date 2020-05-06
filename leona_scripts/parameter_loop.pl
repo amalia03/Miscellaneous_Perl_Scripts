@@ -15,8 +15,6 @@
 
 foreach $i (0 ..$#b){
     $outfile="denovo$b[$i].txt";
-    system("./command.sh", $m[$i],$M[$i],$n[$i],$outfile);
-   # print $out "command $m[$i] $M[$i] $n[$i]\n";
-#    close $out;
+    system("./denovo_command.sh", $m[$i],$M[$i],$n[$i],$outfile);
 }
 
